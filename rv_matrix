@@ -1,0 +1,233 @@
+# matrix insns
+# mset
+msettypei      31..28=0x0   mimm13       14..12=0x7 rd 6..0=0x77
+msettilemi     31..28=0x2   mimm13       14..12=0x7 rd 6..0=0x77
+msettileki     31..28=0x4   mimm13       14..12=0x7 rd 6..0=0x77
+msettileni     31..28=0x6   mimm13       14..12=0x7 rd 6..0=0x77
+
+msettype       31..28=0x1 27..20=0x0 rs1 14..12=0x7 rd 6..0=0x77
+msettilem      31..28=0x3 27..20=0x0 rs1 14..12=0x7 rd 6..0=0x77
+msettilek      31..28=0x5 27..20=0x0 rs1 14..12=0x7 rd 6..0=0x77
+msettilen      31..28=0x7 27..20=0x0 rs1 14..12=0x7 rd 6..0=0x77
+
+msetoutsh      31..28=0x8 27..25=0x0 rs2 rs1 14..12=0x7 rd 6..0=0x77
+msetinsh       31..28=0x9 27..25=0x0 rs2 rs1 14..12=0x7 rd 6..0=0x77
+msetsk         31..28=0xa 27..25=0x0 rs2 rs1 14..12=0x7 rd 6..0=0x77
+
+mlae8.m        31..26=0x9  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlae16.m       31..26=0x9  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlae32.m       31..26=0x9  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlae64.m       31..26=0x9  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlbe8.m        31..26=0xa  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlbe16.m       31..26=0xa  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlbe32.m       31..26=0xa  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlbe64.m       31..26=0xa  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlce8.m        31..26=0x0  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlce16.m       31..26=0x0  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlce32.m       31..26=0x0  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlce64.m       31..26=0x0  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+
+mlate8.m       31..26=0xd  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlate16.m      31..26=0xd  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlate32.m      31..26=0xd  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlate64.m      31..26=0xd  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlbte8.m       31..26=0xe  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlbte16.m      31..26=0xe  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlbte32.m      31..26=0xe  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlbte64.m      31..26=0xe  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlcte8.m       31..26=0x4  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlcte16.m      31..26=0x4  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlcte32.m      31..26=0x4  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlcte64.m      31..26=0x4  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+
+msae8.m        31..26=0x9  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msae16.m       31..26=0x9  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msae32.m       31..26=0x9  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msae64.m       31..26=0x9  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+msbe8.m        31..26=0xa  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msbe16.m       31..26=0xa  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msbe32.m       31..26=0xa  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msbe64.m       31..26=0xa  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+msce8.m        31..26=0x0  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msce16.m       31..26=0x0  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msce32.m       31..26=0x0  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msce64.m       31..26=0x0  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+
+msate8.m       31..26=0xd  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msate16.m      31..26=0xd  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msate32.m      31..26=0xd  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msate64.m      31..26=0xd  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+msbte8.m       31..26=0xe  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msbte16.m      31..26=0xe  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msbte32.m      31..26=0xe  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msbte64.m      31..26=0xe  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+mscte8.m       31..26=0x4  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+mscte16.m      31..26=0x4  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+mscte32.m      31..26=0x4  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+mscte64.m      31..26=0x4  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+
+
+mma.mm         31..26=0x0  25=0  ms2  ms1 14..12=0x6 md 6..0=0x77
+mfma.mm        31..26=0x0  25=1  ms2  ms1 14..12=0x6 md 6..0=0x77
+mwma.mm        31..26=0x1  25=0  ms2  ms1 14..12=0x6 md 6..0=0x77
+mfwma.mm       31..26=0x1  25=1  ms2  ms1 14..12=0x6 md 6..0=0x77
+mqma.mm        31..26=0x2  25=0  ms2  ms1 14..12=0x6 md 6..0=0x77
+
+maddc.mm       31..26=0x4  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfaddc.mm      31..26=0x4  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mwaddc.mm      31..26=0x5  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwaddc.mm     31..26=0x5  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mqaddc.mm      31..26=0x6  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+
+msubc.mm       31..26=0x7  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfsubc.mm      31..26=0x7  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mwsubc.mm      31..26=0x8  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwsubc.mm     31..26=0x8  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mqsubc.mm      31..26=0x9  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+
+mrsubc.mm      31..26=0xa  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfrsubc.mm     31..26=0xa  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mwrsubc.mm     31..26=0xb  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwrsubc.mm    31..26=0xb  25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mqrsubc.mm     31..26=0xc  25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+
+memulc.mx      31..26=0xd  25=0 rs2  ms1 14..12=0x6 md 6..0=0x77
+mfemulc.mf     31..26=0xd  25=1 rs2  ms1 14..12=0x6 md 6..0=0x77
+mwemulc.mx     31..26=0xe  25=0 rs2  ms1 14..12=0x6 md 6..0=0x77
+mfwemulc.mf    31..26=0xe  25=1 rs2  ms1 14..12=0x6 md 6..0=0x77
+mqemulc.mx     31..26=0xf  25=0 rs2  ms1 14..12=0x6 md 6..0=0x77
+
+memulc.mi      31..26=0x10 25=0 mimm5     ms1 14..12=0x6 md 6..0=0x77
+mwemulc.mi     31..26=0x11 25=0 mimm5     ms1 14..12=0x6 md 6..0=0x77
+mqemulc.mi     31..26=0x12 25=0 mimm5     ms1 14..12=0x6 md 6..0=0x77
+
+memulc.mm      31..26=0x13 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfemulc.mm     31..26=0x13 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mwemulc.mm     31..26=0x14 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwemulc.mm    31..26=0x14 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mqemulc.mm     31..26=0x15 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+
+mfncvtc.f.fw.m  31..26=0x18 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwcvtc.fw.f.m  31..26=0x18 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfcvtc.f.x.m    31..26=0x1a 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfcvtc.x.f.m    31..26=0x1a 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfncvtc.f.xw.m  31..26=0x1b 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwcvtc.xw.f.m  31..26=0x1b 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfncvtc.f.xq.m  31..26=0x1c 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwcvtc.xq.f.m  31..26=0x1c 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwcvtc.fw.x.m  31..26=0x1d 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfncvtc.x.fw.m  31..26=0x1d 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfcvtc.fw.xw.m  31..26=0x1e 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfcvtc.xw.fw.m  31..26=0x1e 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfncvtc.fw.xq.m 31..26=0x1f 25=1 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+mfwcvtc.xq.fw.m 31..26=0x1f 25=0 24..20=0  ms1 14..12=0x6 md 6..0=0x77
+
+
+mlae8.v        31..26=0x20  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlae16.v       31..26=0x20  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlae32.v       31..26=0x20  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlae64.v       31..26=0x20  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlbe8.v        31..26=0x21  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlbe16.v       31..26=0x21  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlbe32.v       31..26=0x21  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlbe64.v       31..26=0x21  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlce8.v        31..26=0x22  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlce16.v       31..26=0x22  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlce32.v       31..26=0x22  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlce64.v       31..26=0x22  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+
+msae8.v        31..26=0x20  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msae16.v       31..26=0x20  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msae32.v       31..26=0x20  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msae64.v       31..26=0x20  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+msbe8.v        31..26=0x21  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msbe16.v       31..26=0x21  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msbe32.v       31..26=0x21  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msbe64.v       31..26=0x21  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+msce8.v        31..26=0x22  25=1  rs2 rs1 14..12=0x0 ms3 6..0=0x77
+msce16.v       31..26=0x22  25=1  rs2 rs1 14..12=0x1 ms3 6..0=0x77
+msce32.v       31..26=0x22  25=1  rs2 rs1 14..12=0x2 ms3 6..0=0x77
+msce64.v       31..26=0x22  25=1  rs2 rs1 14..12=0x3 ms3 6..0=0x77
+
+mmvar.v.m      31..26=0x1   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvar.m.v      31..26=0x1   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mmvbr.v.m      31..26=0x2   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvbr.m.v      31..26=0x2   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mmvcr.v.m      31..26=0x3   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvcr.m.v      31..26=0x3   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mmvac.v.m      31..26=0x5   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvac.m.v      31..26=0x5   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mmvbc.v.m      31..26=0x6   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvbc.m.v      31..26=0x6   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mmvcc.v.m      31..26=0x7   25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mmvcc.m.v      31..26=0x7   25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mwmvcr.v.m     31..26=0x13  25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mwmvcr.m.v     31..26=0x13  25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mwmvcc.v.m     31..26=0x17  25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mwmvcc.m.v     31..26=0x17  25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mqmvcr.v.m     31..26=0x23  25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mqmvcr.m.v     31..26=0x23  25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+mqmvcc.v.m     31..26=0x27  25=0  rs2 ms1 14..12=0x5 vd 6..0=0x77
+mqmvcc.m.v     31..26=0x27  25=1  rs2 vs1 14..12=0x5 md 6..0=0x77
+
+mmvac.m.m      31..26=0x8   25=0  24..20=0   ms1 14..12=0x5 md 6..0=0x77
+
+memulcr.mv     31..26=0x21  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfemulcr.mv    31..26=0x21  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mwemulcr.mv    31..26=0x22  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfwemulcr.mv   31..26=0x22  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mqemulcr.mv    31..26=0x23  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+memulcc.mv     31..26=0x24  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfemulcc.mv    31..26=0x24  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mwemulcc.mv    31..26=0x25  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfwemulcc.mv   31..26=0x25  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mqemulcc.mv    31..26=0x26  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+
+maddcr.mv      31..26=0x27  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfaddcr.mv     31..26=0x27  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mwaddcr.mv     31..26=0x28  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfwaddcr.mv    31..26=0x28  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mqaddcr.mv     31..26=0x29  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+maddcc.mv      31..26=0x2a  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfaddcc.mv     31..26=0x2a  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mwaddcc.mv     31..26=0x2b  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+mfwaddcc.mv    31..26=0x2b  25=1  vs2 ms1 14..12=0x6 md 6..0=0x77
+mqaddcc.mv     31..26=0x2c  25=0  vs2 ms1 14..12=0x6 md 6..0=0x77
+
+mmacccr.mv     31..26=0x2d  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+mfmacccr.mv    31..26=0x2d  25=1  vs2 vs1 14..12=0x6 md 6..0=0x77
+mwmacccr.mv    31..26=0x2e  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+mfwmacccr.mv   31..26=0x2e  25=1  vs2 vs1 14..12=0x6 md 6..0=0x77
+mqmacccr.mv    31..26=0x2f  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+mmacccc.mv     31..26=0x30  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+mfmacccc.mv    31..26=0x30  25=1  vs2 vs1 14..12=0x6 md 6..0=0x77
+mwmacccc.mv    31..26=0x31  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+mfwmacccc.mv   31..26=0x31  25=1  vs2 vs1 14..12=0x6 md 6..0=0x77
+mqmacccc.mv    31..26=0x32  25=0  vs2 vs1 14..12=0x6 md 6..0=0x77
+
+mlufae8.m      31..26=0x30  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlufae16.m     31..26=0x30  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlufae32.m     31..26=0x30  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlufae64.m     31..26=0x30  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlufbe8.m      31..26=0x31  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlufbe16.m     31..26=0x31  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlufbe32.m     31..26=0x31  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlufbe64.m     31..26=0x31  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+mlufce8.m      31..26=0x32  25=0  rs2 rs1 14..12=0x0 md 6..0=0x77
+mlufce16.m     31..26=0x32  25=0  rs2 rs1 14..12=0x1 md 6..0=0x77
+mlufce32.m     31..26=0x32  25=0  rs2 rs1 14..12=0x2 md 6..0=0x77
+mlufce64.m     31..26=0x32  25=0  rs2 rs1 14..12=0x3 md 6..0=0x77
+
+msufae8.m      31..26=0x30  25=1  rs2 rs1 14..12=0x0 md 6..0=0x77
+msufae16.m     31..26=0x30  25=1  rs2 rs1 14..12=0x1 md 6..0=0x77
+msufae32.m     31..26=0x30  25=1  rs2 rs1 14..12=0x2 md 6..0=0x77
+msufae64.m     31..26=0x30  25=1  rs2 rs1 14..12=0x3 md 6..0=0x77
+msufbe8.m      31..26=0x31  25=1  rs2 rs1 14..12=0x0 md 6..0=0x77
+msufbe16.m     31..26=0x31  25=1  rs2 rs1 14..12=0x1 md 6..0=0x77
+msufbe32.m     31..26=0x31  25=1  rs2 rs1 14..12=0x2 md 6..0=0x77
+msufbe64.m     31..26=0x31  25=1  rs2 rs1 14..12=0x3 md 6..0=0x77
+msufce8.m      31..26=0x32  25=1  rs2 rs1 14..12=0x0 md 6..0=0x77
+msufce16.m     31..26=0x32  25=1  rs2 rs1 14..12=0x1 md 6..0=0x77
+msufce32.m     31..26=0x32  25=1  rs2 rs1 14..12=0x2 md 6..0=0x77
+msufce64.m     31..26=0x32  25=1  rs2 rs1 14..12=0x3 md 6..0=0x77
+

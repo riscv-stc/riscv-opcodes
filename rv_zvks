@@ -25,10 +25,10 @@ $import rv_zvbc::vclmulh.vv
 $import rv_zvbc::vclmulh.vx
 
 # Import Zvksed
-$import rv_zvksed::vsm4k.vi
+# $import rv_zvksed::vsm4k.vi
 $import rv_zvksed::vsm4r.vv
 $import rv_zvksed::vsm4r.vs
 
 # Import Zvksh
 $import rv_zvksh::vsm3c.vi
-$import rv_zvksh::vsm3me.vv
+#$import rv_zvksh::vsm3me.vv

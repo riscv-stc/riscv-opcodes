@@ -33,7 +33,7 @@ $import rv_zvkned::vaesdf.vs
 $import rv_zvkned::vaesdf.vv
 $import rv_zvkned::vaesdm.vs
 $import rv_zvkned::vaesdm.vv
-$import rv_zvkned::vaeskf1.vi
+# $import rv_zvkned::vaeskf1.vi
 $import rv_zvkned::vaeskf2.vi
 $import rv_zvkned::vaesz.vs
 
